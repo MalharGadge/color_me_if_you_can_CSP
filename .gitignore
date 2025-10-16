@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+level_autogen.json
+interesting_tests.json

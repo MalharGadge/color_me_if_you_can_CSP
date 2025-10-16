@@ -10,11 +10,11 @@ from pathlib import Path
 
 # ---------- config you can tweak ----------
 OUT_PATH   = "level_autogen.json"
-N_NODES    = 200     # number of nodes
+N_NODES    = 300     # number of nodes
 K_COLORS   = 3        # must be <= len(PALETTE)
 EDGE_P     = 10     # cross-class edge probability (density)
 PRE_FRAC   = 0.1     # fraction of nodes pre-colored (consistent)
-START_MODE = "random" # "maxdeg" or "random"
+START_MODE = "maxdeg" # "maxdeg" or "random"
 
 PALETTE = ["Red", "Green", "Blue", "Yellow", "Purple", "Orange"]
 

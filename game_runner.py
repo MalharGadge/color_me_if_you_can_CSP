@@ -93,7 +93,7 @@ class GameRunner:
         return True, "OK"
 
 if __name__ == "__main__":
-    level_file = "level_autogen.json"
+    level_file = "interesting_tests.json"
 
     # with open(level_file, 'w') as f: json.dump(level_data, f)
 
