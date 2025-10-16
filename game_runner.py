@@ -93,21 +93,9 @@ class GameRunner:
         return True, "OK"
 
 if __name__ == "__main__":
-    level_file = "level5.json"
-    level_data = {
-        "graph": {
-            "nodes": ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"],
-            "edges": [["A1","A2"], ["A2","A3"], ["B1","B2"], ["B2","B3"], ["C1","C2"], ["C2","C3"],
-                    ["A1","B1"], ["A2","B2"], ["A3","B3"], ["B1","C1"], ["B2","C2"], ["B3","C3"],
-                    ["A1","B2"], ["A2","B3"], ["B1","C2"], ["B2","C3"]]
-        },
-        "pre_colored": {"A1":"Blue", "C3":"Red"},
-        "colors": ["Red", "Green", "Blue"],
-        "start_node": "B2",
-        "visibility_radius": 1
-        }
+    level_file = "level_autogen.json"
 
-    with open(level_file, 'w') as f: json.dump(level_data, f)
+    # with open(level_file, 'w') as f: json.dump(level_data, f)
 
     runner = GameRunner(level_file, CSP_AGENT)
     final_summary = runner.run_game()
